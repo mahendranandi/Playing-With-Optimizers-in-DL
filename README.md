@@ -1,7 +1,7 @@
 # Playing-With-Optimizers-in-DL
 Using different optimizers for a comparison study, finding the root of differences by visualization and to find the best case for a specific task
 
-[[GIF credit](https://www.analyticsvidhya.com/blog/2021/06/guide-to-gradient-descent-and-its-variants-with-python-implementation/)]<img src="./Images/front.gif" align="left" width="600" height="790">
+[[GIF credit](https://www.analyticsvidhya.com/blog/2021/06/guide-to-gradient-descent-and-its-variants-with-python-implementation/)]<img src="./Images/front.gif" align="left" width="600" >
 
 ` - Note: In an another repo we discuss about different optimization algorithms with visualiation on different function by simulation but here we take a real life dataset and apply different Well Known optimizers for optimizinig loss function ` 
 
@@ -92,7 +92,7 @@ Here we see hoe it is given:
 ```
          
 * Ultimatly you can make a dataframe or if you download the dataset from any other source you will get like this,
-<img src="./Images/df.png" align="middle" width="600" height="790">
+<img src="./Images/df.png" align="middle" >
 
 
 [I did someting different from what is generally done, you can see from the below plot, I took 25,000 training 15,000 validation and 10,000 test data. The classes are shown by colour, the positive class in each section is 12500, 7473, and 5027 respectively]<img src="./Images/df1.png" align="middle" width="400" height="390">
@@ -107,7 +107,7 @@ TextCNN was proposed in the paper [Convolutional Neural Networks for Sentence Cl
 * **Description in Paper**
 <!-- ![image-2.png](attachment:image-2.png) -->
 
-<img src="./Images/model.png" align="middle" width="800" height="990">
+<img src="./Images/model.png" align="middle" >
 - Represent sentence with static and non-static channels.
 - Convolve with multiple filter widths and feature maps.
 - Use max-over-time pooling.
@@ -115,8 +115,8 @@ TextCNN was proposed in the paper [Convolutional Neural Networks for Sentence Cl
 
 #### **Network structure of TextCNN:**
 
-
-![image-3.png](attachment:image-3.png)
+<img src="./Images/model2.png" align="middle" >
+<!-- ![image-3.png](attachment:image-3.png) -->
 
 #### 
 Note: Here we  used notation from the [paper](https://arxiv.org/pdf/1609.04747.pdf) and also taken some portion of thery from there. So, it will be better if you can go through the paper once. 
@@ -165,15 +165,15 @@ SGD oscillates across the slopes of the ravine where the surface curves much mor
 
 SGD without momentum
 Image 1: SGD without momentum 
-<img src="./Images/wom.gif" align="left" width="400" height="590">
+<img src="./Images/wom.gif" align="left" >
 Image 2: SGD with momentum 
-<img src="./Images/wm.gif" align="right" width="400" height="590">
+<img src="./Images/wm.gif" align="right" >
 Momentum is a method that helps accelerate SGD in the relevant direction and dampens oscillations as can be seen in Image 2.
 
 Instead of depending only on the current gradient to update the weight, gradient descent with momentum replaces the current gradient with m (“momentum”), which is an aggregate of gradients. This aggregate is the exponential moving average of current and past gradients (i.e. up to time t). Later we shall see that this momentum update becomes the standard update for the gradient component for most optimisers.
-<img src="./Images/fsgdm.png" align="middle" width="140" height="140">
+<img src="./Images/fsgdm.png" align="middle" >
 where
-<img src="./Images/fsgdm1.png" align="middle" width="220" height="220">
+<img src="./Images/fsgdm1.png" align="middle" >
 and m initialised to 0.
 Common default value: The momentum term β is usually set to 0.9 or a similar value.
 
@@ -186,9 +186,9 @@ We can think momentum in the case when we push a ball down a hill. The ball accu
 However, a ball that rolls down a hill, blindly following the slope, is highly unsatisfactory. We'd like to have a smarter ball, a ball that has a notion of where it is going so that it knows to slow down before the hill slopes up again.
 
 This update utilises m, the exponential moving average of what we would call projected gradients.
-<img src="./Images/nag1.png" align="middle" width="140" height="140">
+<img src="./Images/nag1.png" align="middle" >
 where
-<img src="./Images/nag2.png" align="middle" width="220" height="220">
+<img src="./Images/nag2.png" align="middle" >
 and m initialised to 0.
 The last term in the second equation is a projected gradient. This value can be obtained by going ‘one step ahead’ using the previous velocity (Eqn. 4).
 
@@ -274,3 +274,4 @@ Proposed default values by the authors:
 
 
  <img src="./Images/all_opt.png" align="middle" width="600" height="790">
+<!-- width="220" height="220" -->
