@@ -295,6 +295,7 @@ Proposed default values by the authors:
 ε = 10⁻⁸
 
 
- -->
+ 
  <img src="./Images/all_opt.png" align="middle" width="600" height="790">
 <!-- width="220" height="220" -->
+-->
