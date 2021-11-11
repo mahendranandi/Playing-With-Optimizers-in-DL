@@ -171,6 +171,29 @@ Image 2: SGD with momentum
 Momentum is a method that helps accelerate SGD in the relevant direction and dampens oscillations as can be seen in Image 2.
 
 Instead of depending only on the current gradient to update the weight, gradient descent with momentum replaces the current gradient with m (“momentum”), which is an aggregate of gradients. This aggregate is the exponential moving average of current and past gradients (i.e. up to time t). Later we shall see that this momentum update becomes the standard update for the gradient component for most optimisers.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+
+
+
+
+
+
 <img src="./Images/fsgdm.png" align="middle" >
 where
 <img src="./Images/fsgdm1.png" align="middle" >
@@ -272,6 +295,6 @@ Proposed default values by the authors:
 ε = 10⁻⁸
 
 
-
+ -->
  <img src="./Images/all_opt.png" align="middle" width="600" height="790">
 <!-- width="220" height="220" -->
