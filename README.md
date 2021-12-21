@@ -1,6 +1,9 @@
 # Playing-With-Optimizers-in-DL
 Using different optimizers for a comparison study, finding the root of differences by visualization and to find the best case for a specific task
 
+**For detailed explaination please visit [this repo](https://github.com/mahendranandi/Optimization-Algorithm/tree/main/Playing_With_Optimizers_in_DL)**
+
+<!-- 
 [[GIF credit](https://www.analyticsvidhya.com/blog/2021/06/guide-to-gradient-descent-and-its-variants-with-python-implementation/)]<img src="./Images/front.gif" align="left" width="600" >
 
 ` - Note: In an another repo we discuss about different optimization algorithms with visualiation on different function by simulation but here we take a real life dataset and apply different Well Known optimizers for optimizinig loss function ` 
@@ -31,8 +34,8 @@ For this study we can take any dataset, any ask and any method. But I here choos
                 "The IMDB sentiment classification dataset consists of 50,000 movie reviews from IMDB users that are labeled as either positive (1) or negative (0). The reviews are preprocessed and each one is encoded as a sequence of word indexes in the form of integers. The words within the reviews are indexed by their overall frequency within the dataset. For example, the integer “2” encodes the second most frequent word in the data. The 50,000 reviews are split into 25,000 for training and 25,000 for testing.
                 The dataset was created by researchers at Stanford University and published in a 2011 paper, where they achieved 88.89% accuracy. It was also used within the “Bag of Words Meets Bags of Popcorn” Kaggle competition in 2011."
 
-Here we see hoe it is given:
-<!-- ![Dataframe](Images/df.png) -->
+Here we see how it is given: 
+![Dataframe](Images/df.png) 
 
 
 
@@ -105,7 +108,7 @@ Here we see hoe it is given:
 TextCNN was proposed in the paper [Convolutional Neural Networks for Sentence Classification.](http://www.aclweb.org/anthology/D14-1181)
 
 * **Description in Paper**
-<!-- ![image-2.png](attachment:image-2.png) -->
+ ![image-2.png](attachment:image-2.png) 
 
 <img src="./Images/model.png" align="middle" >
 - Represent sentence with static and non-static channels.
@@ -116,7 +119,7 @@ TextCNN was proposed in the paper [Convolutional Neural Networks for Sentence Cl
 #### **Network structure of TextCNN:**
 
 <img src="./Images/model2.png" align="middle" >
-<!-- ![image-3.png](attachment:image-3.png) -->
+ ![image-3.png](attachment:image-3.png) 
 
 #### 
 Note: Here we  used notation from the [paper](https://arxiv.org/pdf/1609.04747.pdf) and also taken some portion of thery from there. So, it will be better if you can go through the paper once. 
@@ -187,7 +190,7 @@ Instead of depending only on the current gradient to update the weight, gradient
 
 
 
-<!-- 
+
 
 
 
@@ -292,10 +295,10 @@ Proposed default values by the authors:
 α = 0.001
 β₁ = 0.9
 β₂ = 0.999
-ε = 10⁻⁸
+ε = 10⁻⁸ 
 
 
  
  <img src="./Images/all_opt.png" align="middle" width="600" height="790">
-<!-- width="220" height="220" -->
+width="220" height="220"
 -->
